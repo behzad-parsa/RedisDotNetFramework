@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisDotNetFramework.Api", "RedisDotNetFramework.Api\RedisDotNetFramework.Api.csproj", "{9034891D-D8AE-4E1C-950D-3A633AEF2BD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisDotNetFramework.Infra", "RedisDotNetFramework.Infra\RedisDotNetFramework.Infra.csproj", "{D1E4238A-045C-4D97-8CDB-8D159E953229}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9034891D-D8AE-4E1C-950D-3A633AEF2BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9034891D-D8AE-4E1C-950D-3A633AEF2BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9034891D-D8AE-4E1C-950D-3A633AEF2BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E4238A-045C-4D97-8CDB-8D159E953229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E4238A-045C-4D97-8CDB-8D159E953229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E4238A-045C-4D97-8CDB-8D159E953229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E4238A-045C-4D97-8CDB-8D159E953229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
