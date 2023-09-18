@@ -23,7 +23,12 @@ namespace RedisDotNetFramework.Infra
 
             return default;
         }
-
+        /// <summary>
+        /// Remove Specified Key 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="dbNumber"></param>
+        /// <returns></returns>
         public bool RemoveKey(string key, int dbNumber)
         {
             var database = _redisStore.GetRedisDatabase(dbNumber);
@@ -114,6 +119,15 @@ namespace RedisDotNetFramework.Infra
 
             return list ?? null;
         }
+
+        /// <summary>
+        /// Insert All Element of List
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <param name="dbNumber"></param>
+        /// <returns></returns>
         public bool SetList<T>(string key, List<T> value, int dbNumber)
         {
             try
