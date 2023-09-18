@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RedisDotNetFramework.Api.Models;
+using RedisDotNetFramework.Infra;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,10 +11,14 @@ namespace RedisDotNetFramework.Api.Controllers
 {
     public class TestController : ApiController
     {
-        [HttpGet]
-        public string GetNames()
+        private readonly IRedisCacheService redisCacheService;
+        //public TestController()
+        //{
+
+        //}
+        public TestController(IRedisCacheService redisCacheService)
         {
-            return "Test";
+            this.redisCacheService = redisCacheService;
         }
 
         // GET api/values
@@ -28,8 +34,9 @@ namespace RedisDotNetFramework.Api.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody] string value)
+        public void Post(User user)
         {
+
         }
 
         // PUT api/values/5
