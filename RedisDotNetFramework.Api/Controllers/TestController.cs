@@ -9,6 +9,12 @@ namespace RedisDotNetFramework.Api.Controllers
 {
     public class TestController : ApiController
     {
+        [HttpGet]
+        public string GetNames()
+        {
+            return "Test";
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
