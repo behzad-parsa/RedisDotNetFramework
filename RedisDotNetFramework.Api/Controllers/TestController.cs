@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace RedisDotNetFramework.Api.Controllers
 {
-    public class ValuesController : ApiController
+    public class TestController : ApiController
     {
         // GET api/values
         public IEnumerable<string> Get()
